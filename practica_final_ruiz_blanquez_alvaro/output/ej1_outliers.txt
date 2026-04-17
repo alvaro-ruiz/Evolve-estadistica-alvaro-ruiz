@@ -1,0 +1,38 @@
+=== Detección de Outliers — Método IQR ===
+
+Justificación: Se usa el método IQR porque SalePrice presenta una asimetría positiva (~1.88)
+ y IQR es resistente a dicha asimetría.
+
+Variable               Outliers  % sobre total   Límite inf   Límite sup
+------------------------------------------------------------------------
+MSSubClass                  103           7.1%        -55.0        145.0
+LotFrontage                  88           6.0%         27.5        111.5
+LotArea                      69           4.7%       1481.5      17673.5
+OverallQual                   2           0.1%          2.0         10.0
+OverallCond                 125           8.6%          3.5          7.5
+YearBuilt                     7           0.5%       1885.0       2069.0
+MasVnrArea                   96           6.6%       -249.0        415.0
+BsmtFinSF1                    7           0.5%      -1068.4       1780.6
+BsmtFinSF2                  167          11.4%          0.0          0.0
+BsmtUnfSF                    29           2.0%       -654.5       1685.5
+TotalBsmtSF                  61           4.2%         42.0       2052.0
+1stFlrSF                     20           1.4%        118.1       2155.1
+2ndFlrSF                      2           0.1%      -1092.0       1820.0
+LowQualFinSF                 26           1.8%          0.0          0.0
+GrLivArea                    31           2.1%        158.6       2747.6
+BsmtFullBath                  1           0.1%         -1.5          2.5
+BsmtHalfBath                 82           5.6%          0.0          0.0
+BedroomAbvGr                 35           2.4%          0.5          4.5
+KitchenAbvGr                 68           4.7%          1.0          1.0
+TotRmsAbvGrd                 30           2.1%          2.0         10.0
+Fireplaces                    5           0.3%         -1.5          2.5
+GarageCars                    5           0.3%         -0.5          3.5
+GarageArea                   21           1.4%        -27.8        938.2
+WoodDeckSF                   32           2.2%       -252.0        420.0
+OpenPorchSF                  77           5.3%       -102.0        170.0
+EnclosedPorch               208          14.2%          0.0          0.0
+3SsnPorch                    24           1.6%          0.0          0.0
+ScreenPorch                 116           7.9%          0.0          0.0
+PoolArea                      7           0.5%          0.0          0.0
+MiscVal                      52           3.6%          0.0          0.0
+SalePrice                    61           4.2%       3937.5     340037.5
