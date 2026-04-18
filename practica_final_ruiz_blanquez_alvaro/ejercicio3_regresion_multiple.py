@@ -81,17 +81,17 @@ def regresion_lineal_multiple(X_train, y_train, X_test):
 
     # TODO: Paso 1 — Añadir columna de unos a X_train para el intercepto β₀
     # Pista: np.ones((n, 1)) y np.hstack([ones, X_train])
-    X_train_b = None  # ← Reemplaza None con tu implementación
+    X_train_b = np.hstack([np.ones((X_train.shape[0], 1)), X_train])
 
     # TODO: Paso 2 — Calcular los coeficientes β con la fórmula OLS
     # β = (XᵀX)⁻¹ Xᵀy
-    coefs = None  # ← Reemplaza None con tu implementación
+    coefs = np.linalg.inv(X_train_b.T @ X_train_b) @ X_train_b.T @ y_train
 
     # TODO: Paso 3 — Añadir columna de unos a X_test de la misma forma
-    X_test_b = None  # ← Reemplaza None con tu implementación
+    X_test_b = np.hstack([np.ones((X_test.shape[0], 1)), X_test])
 
     # TODO: Paso 4 — Calcular predicciones ŷ = X_test_b · β
-    y_pred = None  # ← Reemplaza None con tu implementación
+    y_pred = X_test_b @ coefs
 
     return coefs, y_pred
 

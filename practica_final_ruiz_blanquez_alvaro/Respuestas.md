@@ -101,19 +101,21 @@ Añade aqui tu descripción y analisis:
 
 **Pregunta 4.1** — ¿La serie presenta tendencia? Descríbela brevemente (tipo, dirección, magnitud aproximada).
 
-> _Escribe aquí tu respuesta_
+> La serie presenta una tendencia alcista, con un ligero aumento de 0.05 en la pendiente de las ventas a lo largo del tiempo.
 
 **Pregunta 4.2** — ¿Hay estacionalidad? Indica el periodo aproximado en días y la amplitud del patrón estacional.
 
-> _Escribe aquí tu respuesta_
+> Absolutamente sí. Su patrón estacional es anual, por lo que el recorrido traza una ola estacional que dura el equivalente a su año, es decir unos 365 días.
 
 **Pregunta 4.3** — ¿Se aprecian ciclos de largo plazo en la serie? ¿Cómo los diferencias de la tendencia?
 
-> _Escribe aquí tu respuesta_
+> Si. Tras apartar el efecto fijo de las 4 estaciones de todos los años expuestos arriba, se puede vislumbrar sin esfuerzo un macro-ciclo mucho mayor que engloba estas ondas repitiéndose cada 4 años de vida aproximados. El truco para diferenciarlos conceptualmente de una tendencia en la gráfica, es que un largo periodo de ciclo se comporta como una ola que oscila subiendo y bajando su valor según transcurre eternamente el tiempo, mientras que nuestra línea extraída de tendencia sólo avanza recta mirando adelante, y jamás pierde fuelle hacia atrás.
 
 **Pregunta 4.4** — ¿El residuo se ajusta a un ruido ideal? Indica la media, la desviación típica y el resultado del test de normalidad (p-value) para justificar tu respuesta.
 
-> _Escribe aquí tu respuesta_
+> Sí, el fragmento resultante conforma un Ruido Blanco perfecto.  
+> 
+> A parte de vislumbrarse como si fueran pelos sin sentido, sabemos esto al momento porque la Media técnica nos da prácticamente el cero y su varianza nos es estable la desviación típica no cambia respecto al ~3.22 original del comienzo. Finalmente salimos de dudas porque el Test oficial estadístico de Jarque-Bera tiró de la gráfica una asimetría casi imperceptible, devolviendo y confirmándonos un `P-value de 0.576`. Como este supera la barrera estándar del `0.05`, nos prohíbe negarle tajantemente su distribución de normalidad, permitiendo decir libremente que el ruido adopta la forma idílica y típica de la archiconocida campana de gauss.
 
 ---
 
