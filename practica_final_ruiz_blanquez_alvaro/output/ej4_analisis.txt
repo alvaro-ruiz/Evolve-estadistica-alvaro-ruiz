@@ -1,9 +1,0 @@
-=== ESTADÍSTICOS DEL RESIDUO ===
-Media:     0.1271
-Std:       3.2220
-Asimetría: -0.0509
-Curtosis:  -0.0610
-
-=== RESULTADOS DE TESTS ===
-p-value Normalidad (Jarque-Bera): 0.5766
-p-value ADF (Estacionario):       0.0000

@@ -1,5 +1,0 @@
-Metricas Regresion Logistica:
-Accuracy:  0.76
-Precision: 0.77
-Recall:    0.76
-F1:        0.76

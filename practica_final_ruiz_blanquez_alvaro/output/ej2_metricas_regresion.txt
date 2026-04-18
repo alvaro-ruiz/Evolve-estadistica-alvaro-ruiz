@@ -1,4 +1,0 @@
-Metricas Regresion Lineal:
-MAE:  20435.97
-RMSE: 52308.12
-R2:   0.6433

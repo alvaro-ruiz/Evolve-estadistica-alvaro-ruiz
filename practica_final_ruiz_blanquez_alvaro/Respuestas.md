@@ -74,23 +74,26 @@ Añade aqui tu descripción y analisis:
 
 **Pregunta 3.1** — Explica en tus propias palabras qué hace la fórmula β = (XᵀX)⁻¹ Xᵀy y por qué es necesario añadir una columna de unos a la matriz X.
 
-> _Escribe aquí tu respuesta_
+> La formula calcula automaticamente los coeficientes de la regresión lineal múltiple.
+> Basicamenta para no obligar a que la recta nazca en el origen (0,0), necesitamos añadir una columna de unos a la matriz X.
 
 **Pregunta 3.2** — Copia aquí los cuatro coeficientes ajustados por tu función y compáralos con los valores de referencia del enunciado.
 
-| Parametro | Valor real | Valor ajustado |
-|-----------|-----------|----------------|
-| β₀        | 5.0       |                |
-| β₁        | 2.0       |                |
-| β₂        | -1.0      |                |
-| β₃        | 0.5       |                |
-
-> _Escribe aquí tu respuesta_
+> | Parametro | Valor real | Valor ajustado |
+> |-----------|-----------|----------------|
+> | β₀        | 5.0       | 4.865          |
+> | β₁        | 2.0       | 2.064          |
+> | β₂        | -1.0      | -1.117         |
+> | β₃        | 0.5       | 0.439          |
+> 
+> Como ves en la tabla, el motor que diseñamos ha funcionado correctamente, ya que nuestros coeficientes son muy cercanos a los reales.
 
 **Pregunta 3.3** — ¿Qué valores de MAE, RMSE y R² has obtenido? ¿Se aproximan a los de referencia?
 
-> _Escribe aquí tu respuesta_
-
+> - **MAE**: 1.166
+> - **RMSE**: 1.461
+> - **R²**: 0.690
+> Si, se aproximan bastante a los de referencia ya que el error es muy bajo y el R² es alto.
 ---
 
 ## Ejercicio 4 — Series Temporales
@@ -115,7 +118,7 @@ Añade aqui tu descripción y analisis:
 
 > Sí, el fragmento resultante conforma un Ruido Blanco perfecto.  
 > 
-> A parte de vislumbrarse como si fueran pelos sin sentido, sabemos esto al momento porque la Media técnica nos da prácticamente el cero y su varianza nos es estable la desviación típica no cambia respecto al ~3.22 original del comienzo. Finalmente salimos de dudas porque el Test oficial estadístico de Jarque-Bera tiró de la gráfica una asimetría casi imperceptible, devolviendo y confirmándonos un `P-value de 0.576`. Como este supera la barrera estándar del `0.05`, nos prohíbe negarle tajantemente su distribución de normalidad, permitiendo decir libremente que el ruido adopta la forma idílica y típica de la archiconocida campana de gauss.
+> Sus registros computados demuestran que pivota justamente en torno al 0 sin dispararse aleatoriamente la desviación típica estanca de 3.22, un valor estable. Respaldando esto de forma académica, el Test de Jarque-Bera nos devuelve un claro `P-Value = 0.576`, lo que nos impide rechazar estadísticamente la hipótesis de normalidad, permitiendo dictaminar que este error residual dibuja la silueta típica de una pura curva de Campana de Gauss. Su indudable `P-Value ADF = 0.000` nos re-confirma que este ruido tampoco se contamina acumulando o expandiendo varianza con el paso del tiempo por sí mismo (es rotundamente estacionario).
 
 ---
 
